@@ -1,0 +1,66 @@
+.layui-layer-setwin{
+    display: none !important;
+}
+body{
+    /*background-color: red;*/
+}
+h1{
+    width: 500px;
+    margin:20% 30%;
+}
+#window{
+    -webkit-perspective: 800px;  //主窗口距离屏幕的位置
+   -webkit-perspective-origin: 50% 50%; //眼睛的角度-
+}
+
+#div4{
+    width:100%;
+    height: 100%;
+    background:black;
+    /*background-size: 600px 1000px;*/
+    backface-visibility:hidden;
+    transform-origin: center;
+    /*transform: rotateY(180deg);*/
+    animation: div4 1s   ;
+    position: absolute;
+    /*margin-left: 50%;*/
+    /*margin-top: 50%;*/
+}
+
+@keyframes div4 {
+    from{
+        /*transform: translateX(2000px) ;*/
+        transform: rotateY(0deg);
+    }
+    to{
+        /*transform: translateX(0px) ;*/
+        transform: rotateY(360deg) ;
+
+    }
+}
+#body{
+    position: absolute;
+    /*margin-left: 300px;*/
+    /*top: 200px;*/
+    left: 50px;
+    transform-style: preserve-3d;//设置窗口是3D属性
+    transform-origin: center;
+    animation: body  0.5s ;
+    /*background: black;*/
+    width: 1200px;
+    height:800px;
+    /*transform: rotateY(90deg) ;*/
+    /*animation: body1 10s linear infinite 10s reverse;*/
+    /*transform: translateZ(-20000px)*/
+}
+@keyframes body {
+    0%{
+        transform: translateZ(-200000px) ;
+    }
+    50%{
+        /*transform: translateZ(0px)  ;*/
+    }
+    100%{
+        transform:translateZ(0px);
+    }
+}
