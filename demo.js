@@ -17,7 +17,7 @@ $(function() {
        }
        i++;
       if(i>=14){
-          $("body").css("background-color","transparent")
+//           $("body").css("background-color","transparent")
           clearInterval(time1)
           $("video").attr("src","1.mp3")
           setTimeout(function(){
