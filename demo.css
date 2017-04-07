@@ -21,7 +21,7 @@ h1{
     backface-visibility:hidden;
     transform-origin: center;
     /*transform: rotateY(180deg);*/
-    animation: div4 1s   ;
+    animation: div4 4s   ;
     position: absolute;
     /*margin-left: 50%;*/
     /*margin-top: 50%;*/
@@ -34,7 +34,7 @@ h1{
     }
     to{
         /*transform: translateX(0px) ;*/
-        transform: rotateY(360deg) ;
+        transform: rotateY(36000deg) ;
 
     }
 }
@@ -45,7 +45,7 @@ h1{
     left: 50px;
     transform-style: preserve-3d;//设置窗口是3D属性
     transform-origin: center;
-    animation: body  0.5s ;
+    animation: body  2s ;
     /*background: black;*/
     width: 1200px;
     height:800px;
