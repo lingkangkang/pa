@@ -18,12 +18,18 @@ $(function() {
        i++;
       if(i>=14){
 //           $("body").css("background-color","transparent")
-          clearInterval(time1)
-          $("video").attr("src","1.mp3")
-           $("video")[0].play()
-          setTimeout(function(){
-          $("h1").toggle(1)
-          $("#window").toggle(1)
+            clearInterval(time1)
+            $("video").attr("src","1.mp3")
+            $("video")[0].play();  
+            document.addEventListener("WeixinJSBridgeReady", function () {  
+            $("video")[0].play();  
+            }, false);  
+            document.addEventListener('YixinJSBridgeReady', function() {  
+            $("video")[0].play();  
+            }, false);  
+            setTimeout(function(){
+            $("h1").toggle(1)
+            $("#window").toggle(1)
 },0)
           
       }
