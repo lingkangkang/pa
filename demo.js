@@ -23,7 +23,7 @@ $(function() {
           setTimeout(function(){
           $("h1").toggle(1)
           $("#window").toggle(1)
-},)
+},0)
           
       }
    },500)
